@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-google_cloud_storage
-Version  : 2.9.0
-Release  : 3
-URL      : https://files.pythonhosted.org/packages/fc/50/c9998f84fd8ce8799d7f8020466bbc5c9e3b1126b04a09fdb02378d451b0/google-cloud-storage-2.9.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/fc/50/c9998f84fd8ce8799d7f8020466bbc5c9e3b1126b04a09fdb02378d451b0/google-cloud-storage-2.9.0.tar.gz
+Version  : 2.10.0
+Release  : 4
+URL      : https://files.pythonhosted.org/packages/6b/20/51e9676cc112ec7344c0a8690361175dc1f41ed6edf618eae8af87d92a49/google-cloud-storage-2.10.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6b/20/51e9676cc112ec7344c0a8690361175dc1f41ed6edf618eae8af87d92a49/google-cloud-storage-2.10.0.tar.gz
 Summary  : Google Cloud Storage API client library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -15,6 +15,11 @@ Requires: pypi-google_cloud_storage-license = %{version}-%{release}
 Requires: pypi-google_cloud_storage-python = %{version}-%{release}
 Requires: pypi-google_cloud_storage-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(google_api_core)
+BuildRequires : pypi(google_auth)
+BuildRequires : pypi(google_cloud_core)
+BuildRequires : pypi(google_resumable_media)
+BuildRequires : pypi(requests)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -57,10 +62,10 @@ python3 components for the pypi-google_cloud_storage package.
 
 
 %prep
-%setup -q -n google-cloud-storage-2.9.0
-cd %{_builddir}/google-cloud-storage-2.9.0
+%setup -q -n google-cloud-storage-2.10.0
+cd %{_builddir}/google-cloud-storage-2.10.0
 pushd ..
-cp -a google-cloud-storage-2.9.0 buildavx2
+cp -a google-cloud-storage-2.10.0 buildavx2
 popd
 
 %build
@@ -68,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684608529
+export SOURCE_DATE_EPOCH=1687884148
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
