@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-google_cloud_storage
-Version  : 2.10.0
-Release  : 4
-URL      : https://files.pythonhosted.org/packages/6b/20/51e9676cc112ec7344c0a8690361175dc1f41ed6edf618eae8af87d92a49/google-cloud-storage-2.10.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/6b/20/51e9676cc112ec7344c0a8690361175dc1f41ed6edf618eae8af87d92a49/google-cloud-storage-2.10.0.tar.gz
+Version  : 2.11.0
+Release  : 5
+URL      : https://files.pythonhosted.org/packages/50/a5/6c9a105eabe77deeb313cbf1d13c2cda4444af7298e17d3ab350a0e5cfb9/google-cloud-storage-2.11.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/50/a5/6c9a105eabe77deeb313cbf1d13c2cda4444af7298e17d3ab350a0e5cfb9/google-cloud-storage-2.11.0.tar.gz
 Summary  : Google Cloud Storage API client library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -62,10 +62,10 @@ python3 components for the pypi-google_cloud_storage package.
 
 
 %prep
-%setup -q -n google-cloud-storage-2.10.0
-cd %{_builddir}/google-cloud-storage-2.10.0
+%setup -q -n google-cloud-storage-2.11.0
+cd %{_builddir}/google-cloud-storage-2.11.0
 pushd ..
-cp -a google-cloud-storage-2.10.0 buildavx2
+cp -a google-cloud-storage-2.11.0 buildavx2
 popd
 
 %build
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687884148
+export SOURCE_DATE_EPOCH=1695171207
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
