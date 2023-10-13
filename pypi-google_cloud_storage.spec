@@ -5,7 +5,7 @@
 #
 Name     : pypi-google_cloud_storage
 Version  : 2.12.0
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/7d/bb/cb35ab1fae6c270ae954b79af8b97e1c4a5007ddded0cf4893e97086b2a5/google-cloud-storage-2.12.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7d/bb/cb35ab1fae6c270ae954b79af8b97e1c4a5007ddded0cf4893e97086b2a5/google-cloud-storage-2.12.0.tar.gz
 Summary  : Google Cloud Storage API client library
