@@ -7,7 +7,7 @@
 #
 Name     : pypi-google_cloud_storage
 Version  : 3.0.0
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/7f/d7/dfa74049c4faa3b4d68fa1a10a7eab5a76c57d0788b47c27f927bedc606d/google_cloud_storage-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7f/d7/dfa74049c4faa3b4d68fa1a10a7eab5a76c57d0788b47c27f927bedc606d/google_cloud_storage-3.0.0.tar.gz
 Summary  : Google Cloud Storage API client library
