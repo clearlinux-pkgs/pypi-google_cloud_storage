@@ -1,5 +1,5 @@
 PKG_NAME := pypi-google_cloud_storage
-URL = https://files.pythonhosted.org/packages/f3/08/52143124415a889bbab60a8ecede1e31ea0e8d992ca078317886f26dc3be/google_cloud_storage-3.1.0.tar.gz
+URL = https://files.pythonhosted.org/packages/27/84/6afc2ffdf31f6247a6bab6ba070e073fb05e0fda56adf59ce52ac591a033/google_cloud_storage-3.1.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
